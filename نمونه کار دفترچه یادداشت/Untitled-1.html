@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+<body class="containerr">
+
+    <div class="row">
+        <div style="display: flex;flex-flow: column;" id="btn" class="col-md-1 ">
+            <button id="defult" class="tab_btn m-1 py-2 active" onclick="tabs(event,'one')">فروردین</button>
+            <button class="tab_btn m-1 py-2" onclick="tabs(event,'two')">اردیبهشت</button>
+            <button class="tab_btn m-1 py-2" onclick="tabs(event,'three')">خرداد</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'four')">تیر</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'five')">مرداد</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'six')">شهریور</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'seven')">مهر</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'eight')">ابان</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'nine')">اذر</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'ten')">دی</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'elleven')">بهمن</button>
+            <button class="tab_btn m-1 " onclick="tabs(event,'towelve')">اسفند</button>
+        </div>
+        <div id="nav_tab" class="mt-3 col-md-11">
+            <div class="content">
+                <div id="one" class="tab_content">
+                    <h3 style="text-align: center;">یادداشت های مربوط به <span>فروردین</span> ماه</h3>
+                    <h6 style="color: violet;margin-bottom: 30px;text-align: center">سال نو مبارک:)</h6>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4 mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form" class="mt-3">
+                                <textarea id="note"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5 shadow-none" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="two" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>اردیبهشت</span> ماه
+                    </h3>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note2" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form2" class="mt-3">
+                                <textarea id="note2"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="three" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>خرداد</span> ماه</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note3" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form3" class="mt-3">
+                                <textarea id="note3"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="four" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>تیر</span> ماه</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note4" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form4" class="mt-3">
+                                <textarea id="note4"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="five" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>مرداد</span> ماه</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note5" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form5" class="mt-3">
+                                <textarea id="note5"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="six" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>شهریور</span> ماه
+                    </h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note6" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form6" class="mt-3">
+                                <textarea id="note6"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="seven" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>مهر</span> ماه</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note7" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form7" class="mt-3">
+                                <textarea id="note7"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="eight" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>ابان</span> ماه</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note8" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form8" class="mt-3">
+                                <textarea id="note8"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="nine" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>اذر</span> ماه</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note9" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form9" class="mt-3">
+                                <textarea id="note9"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="ten" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>دی</span> ماه</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 ">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note10" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form10" class="mt-3">
+                                <textarea id="note10"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="elleven" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>بهمن</span> ماه</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note11" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form11" class="mt-3">
+                                <textarea id="note11"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="towelve" class="tab_content">
+                    <h3 style="text-align: center;margin-bottom: 50px;">یادداشت های مربوط به <span>اسفند</span> ماه</h3>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h5 id="h5">یادداشت های شما:</h5>
+                            <div id="user-note12" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-4  mt-3 mr-4">
+                            <h6>یادداشت خود را وارد کنید:</h6>
+                            <form action="#" id="form12" class="mt-3">
+                                <textarea id="note12"></textarea>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-dark mt-3 ml-5" type="submit">ذخیره یادداشت</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.js"></script>
+    </div>
+</body>
+
+</html>

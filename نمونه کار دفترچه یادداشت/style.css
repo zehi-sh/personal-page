@@ -1,0 +1,111 @@
+body {
+  direction: rtl;
+  font-family: Vazir-Black !important;
+  background-image: url("home.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#btn > button {
+  padding: 10px;
+  border-radius: 10px;
+}
+#btn > button,
+textarea,button,
+.btn:focus {
+  outline: none;
+  box-shadow: 0;
+}
+textarea:focus {
+  border: 1px solid palevioletred;
+  transition: 0.4s;
+}
+textarea {
+  background-color: rgb(43, 41, 41);
+  color: white;
+}
+.tab_btn {
+  background-color: rgb(231, 136, 168);
+  border: none;
+}
+
+.tab_btn:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+#note,
+#note2,
+#note3,
+#note4,
+#note5,
+#note6,
+#note7,
+#note8,
+#note9,
+#note10,
+#note11,
+#note12 {
+  width: 80%;
+}
+.content {
+  text-align: right;
+}
+.fa-trash {
+  color: rgb(252, 204, 252);
+  float: left;
+  cursor: pointer;
+}
+.li {
+  list-style-type: decimal;
+  background-color: palevioletred;
+  opacity: 0.7;
+  padding: 10px;
+}
+@font-face {
+  font-family: Vazir-Black;
+  src: url(../font/Vazir-Black.ttf);
+}
+h3,
+h6,
+p,
+li,
+h5 {
+  color: whitesmoke;
+}
+.btn {
+  background-color: palevioletred;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+#h5 {
+  padding: 10px;
+  border-bottom: 2px dashed palevioletred;
+}
+.btn:focus {
+  outline: 1px solid palevioletred;
+}
+.containerr {
+  padding: 20px;
+}
+.tab_content {
+  transition: 0.3s;
+}
+.tab_content {
+  animation: fading 2s;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+span {
+  color: palevioletred;
+}
+@media screen and (max-width:500px){
+  .tab_btn:hover {
+    transform: scale(1);
+}
+}

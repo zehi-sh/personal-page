@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Untitled-1.css" />
+</head>
+
+<body>
+    <div id="center">
+        <div id="card" class="container">
+            <form class="form row justify-content-center mt-5 pt-5 row">
+                <input type="text" placeholder="بودجه ی خود را وارد کنید"  class="form-control col-md-3 mr-3 shadow-none"
+                    id="userBudget" />
+                <input type="text" placeholder="نام خود را وارد کنید" class="form-control col-md-3 mr-3 shadow-none" id="name" />
+            </form>
+            <form class="form row justify-content-center mt-4">
+                <input type="submit" value="ذخیره کردن" id="save" class="btn btn-info shadow-none shadow-none"/>
+            </form>
+            <div id="main" class="row  mt-5 justify-content-center">
+                <form class="col-md-4 justify-content-center">
+                    <label>اسم:</label> <input type="text" placeholder="مثلا آرایشگاه یا مترو" class="form-control  shadow-none"
+                        id="hazine"><br>
+                    <label>قیمت:</label> <input type="text" placeholder="3000" class="form-control   shadow-none" id="price">
+                    <form class="form row justify-content-center">
+                        <button class="btn btn-info form-control mr-3 mt-4 shadow-none " style="width: 30%;" id="sabt">ثبت</button>
+                    </form>
+                </form>
+                <form class="col-md-4 mr-5 mt-4 ">
+                    <ul class="ul"></ul>
+                    <div class="alert alert-info">
+                        <p> بودجه هفته:<span id="total"></span> تومان</p>
+                    </div>
+                    <div class="alert alert-success">
+                        <p> باقیمانده:<span id="left"></span> تومان</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="Untitled-1.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
